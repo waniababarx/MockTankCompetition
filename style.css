@@ -1,109 +1,119 @@
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-    line-height: 1.6;
-    background: white;
-    color: #333;
+  line-height: 1.6;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  color: #333;
 }
 
+/* Header */
 header {
-    background: #1E3A8A;
-    color: white;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background: url('https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa') no-repeat center center/cover;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
-header .logo {
-    .logo img {
-    height: 40px;
-    width: auto;
-    margin-top: 4px;
-}
-}
+header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
 }
 
+header p {
+  font-size: 1.2rem;
+}
+
+/* Navigation */
 nav ul {
-    display: flex;
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  background-color: #006064;
+  margin: 0;
 }
 
-nav ul li {
-    margin-left: 1rem;
+nav li {
+  margin: 0 1rem;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
+/* Hero Section */
 .hero {
-    background: #FACC15;
-    color: #1E3A8A;
-    text-align: center;
-    padding: 5rem 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 60vh;
+  background: #FACC15;
+  color: #1E3A8A;
+  text-align: center;
+  padding: 5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 60vh;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .hero p {
-    font-size: 1.25rem;
-    max-width: 600px;
-    margin-bottom: 2rem;
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-}
-
+/* Button */
 .btn {
-    background: #1E3A8A;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: bold;
+  background: #1E3A8A;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
 
+.btn:hover {
+  background: #16367d;
+}
+
+/* Sections */
 section {
-    padding: 3rem 2rem;
-    max-width: 800px;
-    margin: auto;
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
 }
 
 section h2 {
-    color: #1E3A8A;
-    margin-bottom: 1rem;
+  color: #006064;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
+section ul li,
+section ol li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Footer */
 footer {
-    background: #1E3A8A;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+  background: #006064;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
