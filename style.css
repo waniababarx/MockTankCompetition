@@ -111,3 +111,26 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+#home {
+    background: linear-gradient(to right, #facc15, #fcd34d);
+}
+
+#about {
+    background-color: #fff7ed; /* warm beige */
+}
+
+#How {
+    background-color: #e0f2fe; /* soft light blue */
+}
+
+#timeline {
+    background-color: #fef9c3; /* soft yellow */
+}
+
+#apply {
+    background-color: #f0fdf4; /* soft mint green */
+}
+
+#faq {
+    background-color: #ede9fe; /* lavender/light purple */
+}
