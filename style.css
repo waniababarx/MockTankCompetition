@@ -330,3 +330,47 @@ footer {
 .tab-content.active {
   display: block;
 }
+[data-aos] {
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+/* Floating Apply Button */
+.floating-apply-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #FACC15;
+  color: #1E3A8A;
+  padding: 0.9rem 1.5rem;
+  font-weight: bold;
+  border-radius: 999px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.floating-apply-btn:hover {
+  background: #fcd34d;
+  color: #0f172a;
+  transform: translateY(-3px);
+}
+
+/* Section Animation Helpers */
+.fade-up {
+  transform: translateY(40px);
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.fade-up.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
