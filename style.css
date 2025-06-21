@@ -12,16 +12,21 @@ body {
   color: #333;
 }
 
-/* Header */
+/* Header – Styled like ExcelAcademe */
 header {
-  background: #f5f7fa; /* Changed to plain clean background */
-  color: #1E3A8A;
-  padding: 2.5rem 2rem;
+  background: url('https://images.unsplash.com/photo-1542744173-05336fcc7ad4?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+  color: white;
+  padding: 5rem 2rem;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Removed logo styling completely */
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
 
 /* Navigation */
 nav ul {
@@ -29,7 +34,7 @@ nav ul {
   justify-content: center;
   list-style: none;
   padding: 0;
-  background-color: #006064;
+  background-color: rgba(0, 0, 0, 0.6);
   margin: 0;
 }
 
@@ -41,6 +46,11 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #FACC15;
 }
 
 /* Hero Section */
@@ -105,32 +115,34 @@ section ol li {
 
 /* Footer */
 footer {
-  background: #006064;
+  background: #024042;
   color: white;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
 }
+
+/* Section Backgrounds */
 #home {
-    background: linear-gradient(to right, #facc15, #fcd34d);
+  background: linear-gradient(to right, #facc15, #fcd34d);
 }
 
 #about {
-    background-color: #fff7ed; /* warm beige */
+  background-color: #fff7ed;
 }
 
-#How {
-    background-color: #e0f2fe; /* soft light blue */
+#how {
+  background-color: #e0f2fe;
 }
 
 #timeline {
-    background-color: #fef9c3; /* soft yellow */
+  background-color: #fef9c3;
 }
 
 #apply {
-    background-color: #f0fdf4; /* soft mint green */
+  background-color: #f0fdf4;
 }
 
 #faq {
-    background-color: #ede9fe; /* lavender/light purple */
+  background-color: #ede9fe;
 }
