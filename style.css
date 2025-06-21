@@ -291,11 +291,12 @@ footer {
 }
 
 .tab-buttons {
+  background-color: white !important; /* changed from gray */
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  gap: 2rem;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .tab-btn {
