@@ -13,19 +13,39 @@ body {
 }
 
 /* Header – Styled like ExcelAcademe */
-header {
-  background: url('https://images.unsplash.com/photo-1542744173-05336fcc7ad4?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
-  color: white;
-  padding: 5rem 2rem;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+.hero-header {
+  position: relative;
+  height: 60vh;
+  background: url('header-bg.jpg') no-repeat center center/cover;
+  filter: blur(0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-header h1 {
-  font-size: 3rem;
+.hero-header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('header-bg.jpg') no-repeat center center/cover;
+  filter: blur(6px);
+  z-index: 1;
+}
+
+.hero-header .overlay {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+.hero-header h1 {
+  font-size: 3.5rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
 }
 
 /* Navigation */
