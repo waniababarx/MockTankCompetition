@@ -240,13 +240,13 @@ footer {
   color: #06203f;
   margin-bottom: 1.5rem;
   font-weight: 600;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', 'Poppins';
 }
 
 .about-right p {
   font-size: 1.15rem;
   line-height: 1.8;
-  color: #1e3cd4;
+  color: #1e3cd480;
   margin-bottom: 1.2rem;
 }
 /* Top contact bar */
