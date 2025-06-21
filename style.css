@@ -186,23 +186,23 @@ footer {
 }
 
 #about {
-  background-color: #fff7ed;
+  background-color: #ffffff;
 }
 
 #how {
-  background-color: #e0f2fe;
+  background-color: #ffffff;
 }
 
 #timeline {
-  background-color: #fef9c3;
+  background-color: #ffffff;
 }
 
 #apply {
-  background-color: #f0fdf4;
+  background-color: #ffffff;
 }
 
 #faq {
-  background-color: #ede9fe;
+  background-color: #ffffff;
 }
 .about-copy {
   padding: 5rem 0;
@@ -237,7 +237,7 @@ footer {
 
 .about-right h2 {
   font-size: 3rem;
-  color: #0b2545;
+  color: #06203f;
   margin-bottom: 1.5rem;
   font-weight: 600;
   font-family: 'Segoe UI', sans-serif;
@@ -246,7 +246,7 @@ footer {
 .about-right p {
   font-size: 1.15rem;
   line-height: 1.8;
-  color: #ffffff;
+  color: #1e3cd4;
   margin-bottom: 1.2rem;
 }
 /* Top contact bar */
