@@ -4,6 +4,7 @@
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
    <title>MockTank</title>
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <link rel="stylesheet" href="style.css" />
     <style>
      html {
@@ -97,42 +98,35 @@
    </div>
   </section>
 
-  <section id="participation-easy" class="participation-easy">
-   <h2>Participating Is Easy</h2>
-   <div class="steps-container">
-    <div class="step">
-      <div class="step-num">1</div>
-      <div class="step-content">
-        <h3>Register Solo or Team up</h3>
-        <p>Register solo or team up with up to four students to compete together.</p>
+  <section id="how" class="steps-section">
+   <h2>How It Works</h2>
+   <div class="step-box" data-aos="fade-up">
+     <div class="step-circle">1</div>
+     <div class="step-text">
+     <h3>Register Online</h3>
+      <p>Apply solo or as a team of up to 3.</p>
+     </div>
+   </div>
+   
+    <div class="step-box">
+      <div class="step-circle">2</div>
+      <div class="step-text">
+        <h3>Submit Your Idea</h3>
+        <p>Submit a short written proposal outlining your startup idea.</p>
       </div>
     </div>
-    <div class="step">
-      <div class="step-num">2</div>
-      <div class="step-content">
-        <h3>Pick a Problem</h3>
-        <p>Identify a pressing problem the world faces or a new market space.</p>
+    <div class="step-box">
+      <div class="step-circle">3</div>
+      <div class="step-text">
+        <h3>Get Mentorship</h3>
+        <p>Semi-finalists attend a virtual mentorship session.</p>
       </div>
     </div>
-    <div class="step">
-      <div class="step-num">3</div>
-      <div class="step-content">
-        <h3>Propose a Solution</h3>
-        <p>Create something innovative and build a business around it.</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">4</div>
-      <div class="step-content">
-        <h3>Use Templates</h3>
-        <p>Reference our pitch template to structure your video.</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">5</div>
-      <div class="step-content">
-        <h3>Submit Your Pitch</h3>
-        <p>Record a 5‑minute video, upload it, and share your YouTube link.</p>
+    <div class="step-box">
+      <div class="step-circle">4</div>
+      <div class="step-text">
+        <h3>Live Pitch</h3>
+        <p>Teams present live to judges and finalists are selected.</p>
       </div>
     </div>
    </div>
@@ -296,6 +290,14 @@
     } else {
       scrollBtn.style.display = 'none';
     }
+   });
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+   AOS.init({
+    duration: 1000, // animation duration in ms
+    once: true      // animate only once on scroll
    });
   </script>
 

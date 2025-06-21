@@ -455,48 +455,47 @@ footer {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
-.participation-easy {
+.steps-section {
+  background-color: #f9f9f9;
   padding: 4rem 2rem;
-  max-width: 1000px;
-  margin: auto;
-  background: #fff;
-  text-align: center;
+  text-align: left;
 }
 
-.participation-easy h2 {
-  font-size: 2.5rem;
-  color: #0b2545;
-  margin-bottom: 2rem;
-}
-
-.steps-container {
+.steps-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 2rem;
+  max-width: 800px;
+  margin: 2rem auto 0;
 }
 
-.step {
-  flex: 1 1 calc(33% - 2rem);
+.step-box {
   display: flex;
   align-items: flex-start;
+  gap: 1.5rem;
 }
 
-.step-num {
-  font-size: 2.5rem;
+.step-circle {
+  min-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1E3A8A;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
-  color: #1E3A8A;
-  margin-right: 1rem;
+  font-size: 1.2rem;
 }
 
-.step-content h3 {
-  font-size: 1.25rem;
-  color: #024042;
+.step-text h3 {
+  font-size: 1.4rem;
+  color: #1E3A8A;
   margin-bottom: 0.5rem;
 }
 
-.step-content p {
+.step-text p {
   font-size: 1rem;
   color: #444;
+  margin: 0;
 }
-
