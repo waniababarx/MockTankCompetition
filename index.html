@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MockTank</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-   html {
-   scroll-behavior: smooth;
-   }
-  </style>
-</head>
+  <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <title>MockTank</title>
+   <link rel="stylesheet" href="style.css" />
+    <style>
+     html {
+     scroll-behavior: smooth;
+     }
+    </style>
+     <style>
+     .floating-apply-btn {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     background-color: #FACC15;
+     color: #1E3A8A;
+     padding: 0.8rem 1.5rem;
+     font-weight: bold;
+     border-radius: 50px;
+     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+     text-decoration: none;
+     z-index: 999;
+     background 0.3s ease;
+     }
+
+     .floating-apply-btn:hover {
+     background-color: #fcd34d;
+     }
+    </style>
+  </head>
 <body>
 
   <div class="tab-wrapper">
@@ -212,6 +232,42 @@
     });
    });
   </script>
+  <a href="#apply" class="floating-apply-btn">Apply Now</a>
+
+  <!-- Add this before </body> -->
+ <a href="#home" class="scroll-top-btn" title="Go to top">⬆</a>
+
+  <style>
+   .scroll-top-btn {
+   position: fixed;
+   bottom: 80px;
+   right: 20px;
+   background-color: #1E3A8A;
+   color: white;
+   padding: 10px 12px;
+   border-radius: 50%;
+   font-size: 1.2rem;
+   display: none;
+   z-index: 1000;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+   transition: background 0.3s ease;
+   }
+
+   .scroll-top-btn:hover {
+   background-color: #16367d;
+   }
+  </style>
+
+  <script>
+   const scrollBtn = document.querySelector('.scroll-top-btn');
+   window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      scrollBtn.style.display = 'block';
+    } else {
+      scrollBtn.style.display = 'none';
+    }
+   });
+  </script> SHOULD i ad this before the the endign body or starting body
 
 </body>
 </html>
