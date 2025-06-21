@@ -85,8 +85,45 @@
     </ul>
   </section>
 
-  <section id="rules">
-    <h2>Competition Rules</h2>
+  <section id="competition-tabs" class="tab-section">
+   <h2 class="section-title">Competition Info</h2>
+
+   <div class="tab-buttons">
+    <button class="tab-btn active" data-tab="timeline">Timeline</button>
+    <button class="tab-btn" data-tab="faq">FAQs</button>
+    <button class="tab-btn" data-tab="awards">Awards</button>
+    <button class="tab-btn" data-tab="rules">Rules</button>
+    <button class="tab-btn" data-tab="guidelines">Guidelines</button>
+   </div>
+
+   <div class="tab-content active" id="timeline">
+    <ul>
+      <li><strong>July 1:</strong> Applications Open</li>
+      <li><strong>July 10:</strong> Final Submission Deadline</li>
+      <li><strong>July 15:</strong> Shortlisted Teams Announced</li>
+      <li><strong>July 20:</strong> Live Pitch Round</li>
+      <li><strong>TBD:</strong> Winners Announced</li>
+    </ul>
+   </div>
+
+   <div class="tab-content" id="faq">
+    <ul>
+      <li><strong>Is it free?</strong> Yes, MockTank is 100% free to enter.</li>
+      <li><strong>Can I join without a team?</strong> Yes, you can apply solo.</li>
+      <li><strong>Do I need experience?</strong> No prior business experience is needed.</li>
+      <li><strong>What will I gain?</strong> Feedback, exposure, and networking with student leaders.</li>
+    </ul>
+   </div>
+
+   <div class="tab-content" id="awards">
+    <ul>
+      <li>🏆 1st Place – MockTank Winner Certificate + Mentorship</li>
+      <li>🥈 2nd Place – Finalist Certificate</li>
+      <li>🎖 Special Mentions – Creativity & Impact</li>
+    </ul>
+   </div>
+
+   <div class="tab-content" id="rules">
     <ul>
       <li>Participants must be between 13–19 years old.</li>
       <li>Teams can have 1–3 members.</li>
@@ -94,36 +131,18 @@
       <li>Pitches should be under 5 minutes long.</li>
       <li>All materials must be submitted in English.</li>
     </ul>
-  </section>
+   </div>
 
-  <section id="guidelines">
-    <h2>Submission Guidelines</h2>
+   <div class="tab-content" id="guidelines">
     <ul>
       <li>Submit a 1–2 page idea proposal.</li>
       <li>Include your problem, solution, and target audience.</li>
       <li>You can attach optional visuals or mockups.</li>
       <li>Submit your proposal as a PDF or shareable Google Doc link.</li>
     </ul>
+   </div>
   </section>
 
-  <section id="faq">
-    <h2>FAQs</h2>
-    <ul>
-      <li><strong>Is it free?</strong> Yes, MockTank is 100% free to enter.</li>
-      <li><strong>Can I join without a team?</strong> Yes, you can apply solo.</li>
-      <li><strong>Do I need experience?</strong> No prior business experience is needed.</li>
-      <li><strong>What will I gain?</strong> Feedback, exposure, and networking with student leaders.</li>
-    </ul>
-  </section>
-
-  <section id="awards">
-    <h2>Awards</h2>
-    <ul>
-      <li>🏆 1st Place – MockTank Winner Certificate + Mentorship</li>
-      <li>🥈 2nd Place – Finalist Certificate</li>
-      <li>🎖 Special Mentions – Creativity & Impact</li>
-    </ul>
-  </section>
 
   <section id="apply">
     <h2>Apply</h2>
@@ -134,6 +153,27 @@
   <footer>
     <p>&copy; 2025 MockTank. All rights reserved.</p>
   </footer>
+  
+  <script>
+   const tabButtons = document.querySelectorAll('.tab-btn');
+   const tabContents = document.querySelectorAll('.tab-content');
+
+   tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Remove active from all buttons
+      tabButtons.forEach(b => b.classList.remove('active'));
+      // Add active to clicked button
+      btn.classList.add('active');
+
+      // Hide all content
+      tabContents.forEach(content => content.classList.remove('active'));
+
+      // Show corresponding content
+      const tabId = btn.getAttribute('data-tab');
+      document.getElementById(tabId).classList.add('active');
+    });
+   });
+  </script>
 
 </body>
 </html>
