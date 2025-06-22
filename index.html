@@ -46,30 +46,36 @@
    </div>
 
   <!-- MAIN NAVIGATION BAR -->
-    <header class="main-header">
-      <div class="nav-container">
-       <div class="site-name">
-         <img src="logooo.png" alt="MockTank Logo" class="navbar-logo" />
-         <h1>MockTank</h1>
-       </div>
-       <nav class="main-nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li class="dropdown">
-            <a href="#about">About <i class="fas fa-caret-down"></i></a>
-            <ul class="dropdown-menu">
+  <header class="main-header">
+    <div class="nav-container">
+      <div class="site-name">
+      <img src="logooo.png" alt="MockTank Logo" class="navbar-logo" />
+      <h1>MockTank</h1>
+      </div>
+      <header class="main-header">
+     <div class="nav-container">
+     <div class="site-name">
+      <img src="logooo.png" alt="MockTank Logo" class="navbar-logo" />
+      <h1>MockTank</h1>
+      </div>
+      <nav class="main-nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li class="dropdown">
+          <a href="#about">About <i class="fas fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
             <li><a href="#mission">Our Mission</a></li>
             <li><a href="#team">Team</a></li>
             <li><a href="#impact">Impact</a></li>
-            </ul>
-         </li>
-          <li><a href="#timeline">Timeline</a></li>
-          <li><a href="#apply">Apply</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ul>
-       </nav>
-      </div>
-    </header>
+          </ul>
+        </li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#apply">Apply</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      </nav>
+    </div>'
+  </header>'
 
 
   <section class="hero-header" id="home">
@@ -79,9 +85,9 @@
     <a href="#apply" class="btn header-btn">Apply Now</a>
    </div>
   </section>
-  
+
   <section class="countdown-section">
-  <h2>Applications Close In</h2>
+  <h2>Applications Closes In</h2>
   <div class="countdown">
     <div><span id="days">00</span><small>Days</small></div>
     <div><span id="hours">00</span><small>Hours</small></div>
@@ -349,23 +355,6 @@
     <p>&copy; 2025 MockTank. All rights reserved.</p>
     </div>
   </footer>
-
-  <script>
-   document.querySelectorAll('.dropdown > a').forEach(drop => {
-    drop.addEventListener('click', function (e) {
-      e.preventDefault();
-      this.parentElement.classList.toggle('open');
-    });
-   });
-
-   window.addEventListener('click', function (e) {
-    document.querySelectorAll('.dropdown').forEach(drop => {
-      if (!drop.contains(e.target)) {
-        drop.classList.remove('open');
-      }
-    });
-   });
-  </script>
 
   <script>
     window.addEventListener('scroll', function () {

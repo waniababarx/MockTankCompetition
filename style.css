@@ -273,7 +273,7 @@ footer {
 
 /* Main white navbar */
 .main-header {
-  background: transparent;
+  background:  white;
   position: absolute;
   top: 0;
   left: 0;
@@ -650,14 +650,14 @@ footer {
 }
 
 .countdown-section {
-  background-color: #facc15;
+  background-color: #ffffff;
   text-align: center;
   padding: 3rem 2rem;
   color: #1E3A8A;
 }
 
 .countdown-section h2 {
-  font-size: 2.5rem;
+  font-size: 3 rem;
   font-weight: bold;
   margin-bottom: 2rem;
 }
