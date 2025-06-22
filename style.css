@@ -131,7 +131,7 @@ nav a:hover {
   font-weight: bold;
   border-radius: 50px;
   text-decoration: none;
-  margin-top: 3rem; /* <== Changed this */
+  margin-top: 5rem;
 }
 
 /* Button */
@@ -408,7 +408,8 @@ footer {
 }
 
 #apply .btn {
-  margin-top: 2rem;
+  margin-top: 3.5rem;
+  display: inline-block;
 }
 
 /* Section Animation Helpers */
