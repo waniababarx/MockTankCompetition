@@ -639,7 +639,20 @@ footer {
   background-color: #f0f0f0;
 }
 
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-menu {
+/* Dropdown Menu - Hidden by default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  z-index: 1000;
+}
+
+/* Show when .open is added via JS */
+.dropdown.open .dropdown-menu {
   display: block;
 }
