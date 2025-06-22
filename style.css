@@ -62,13 +62,24 @@ body {
   margin-top: 1rem;
 }
 
+.site-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo {
+  height: 30px;
+  width: auto;
+  display: block;
+}
 /* Navigation */
 nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: white;
   margin: 0;
 }
 
@@ -401,7 +412,7 @@ footer {
 }
 
 .empower-section {
-  background: url('whitep.jpg') no-repeat center center/cover;
+  background: url('bgbg.jpg') no-repeat center center/cover;
   background-size: cover;
   background-position: center;
   padding: 6rem 2rem;
