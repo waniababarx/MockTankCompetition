@@ -79,6 +79,16 @@
     <a href="#apply" class="btn header-btn">Apply Now</a>
    </div>
   </section>
+  
+  <section class="countdown-section">
+  <h2>Applications Close In</h2>
+  <div class="countdown">
+    <div><span id="days">00</span><small>Days</small></div>
+    <div><span id="hours">00</span><small>Hours</small></div>
+    <div><span id="minutes">00</span><small>Minutes</small></div>
+    <div><span id="seconds">00</span><small>Seconds</small></div>
+    </div>
+  </section>
 
   <section class="empower-section">
    <div class="empower-overlay">
@@ -355,6 +365,41 @@
       }
     });
    });
+  </script>
+
+  <script>
+    window.addEventListener('scroll', function () {
+    const header = document.querySelector('.main-header');
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+    });
+  </script>
+
+  <script>
+    const targetDate = new Date("July 30, 2025 23:59:59").getTime();
+
+    const countdown = setInterval(function () {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerText = days;
+    document.getElementById("hours").innerText = hours;
+    document.getElementById("minutes").innerText = minutes;
+    document.getElementById("seconds").innerText = seconds;
+
+    if (distance < 0) {
+      clearInterval(countdown);
+      document.querySelector(".countdown").innerHTML = "Submission Closed!";
+    }
+   }, 1000);
   </script>
 
 </body>
