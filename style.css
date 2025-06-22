@@ -131,7 +131,7 @@ nav a:hover {
   font-weight: bold;
   border-radius: 50px;
   text-decoration: none;
-  margin-top: 1.5rem;
+  margin-top: 3rem; /* <== Changed this */
 }
 
 /* Button */
