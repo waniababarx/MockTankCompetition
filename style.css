@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 
 body {
@@ -274,17 +274,18 @@ footer {
 /* Main white navbar */
 .main-header {
   background:  white;
-  position: absolute;
+  padding: 1.2rem 0;
+  position: sticky;   
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
   transition: background-color 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .main-header.scrolled {
-  background-color: white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .nav-container {
@@ -293,6 +294,7 @@ footer {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .site-name h1 {
@@ -650,37 +652,44 @@ footer {
 }
 
 .countdown-section {
-  background-color: #ffffff;
   text-align: center;
-  padding: 3rem 2rem;
-  color: #1E3A8A;
+  padding: 3rem 1rem;
+  background-color: #f3f4f6; /* light gray background like rmmun */
 }
 
 .countdown-section h2 {
-  font-size: 3 rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #1E3A8A;
 }
 
 .countdown {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  font-size: 2rem;
-  font-weight: bold;
+  flex-wrap: wrap;
 }
 
 .countdown div {
-  background: white;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+  background-color: #1E3A8A;
+  color: #fff;
   padding: 1rem 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 130px;
 }
 
 .countdown small {
-  display: block;
   font-size: 1rem;
-  font-weight: normal;
-  margin-top: 0.5rem;
-  color: #555;
+  margin-top: 0.3rem;
+  color: #fcd34d;
+  text-transform: uppercase;
+  font-weight: 500;
 }
