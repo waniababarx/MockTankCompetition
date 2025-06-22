@@ -388,7 +388,7 @@ footer {
 /* Floating Apply Button */
 .floating-apply-btn {
   position: fixed;
-  bottom: 20px;
+  bottom: 60px;
   right: 20px;
   background: #FACC15;
   color: #1E3A8A;
@@ -405,6 +405,10 @@ footer {
   background: #fcd34d;
   color: #0f172a;
   transform: translateY(-3px);
+}
+
+#apply .btn {
+  margin-top: 2rem;
 }
 
 /* Section Animation Helpers */
