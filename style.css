@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -257,7 +257,7 @@ footer {
 .about-right p {
   font-size: 1.15rem;
   line-height: 1.8;
-  color: #1e3cd480;
+  color: #000000bb;
   margin-bottom: 1.2rem;
 }
 /* Top contact bar */
@@ -654,14 +654,14 @@ footer {
 .countdown-section {
   text-align: center;
   padding: 3rem 1rem;
-  background-color: #f3f4f6; /* light gray background like rmmun */
+  background-color: #ffffff; /* light gray background like rmmun */
 }
 
 .countdown-section h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   font-weight: 700;
-  color: #1E3A8A;
+  color: #ffffff;
 }
 
 .countdown {
@@ -672,11 +672,11 @@ footer {
 }
 
 .countdown div {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 4rem;
   font-weight: 800;
   background-color: #1E3A8A;
-  color: #fff;
+  color: #000000;
   padding: 1rem 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
