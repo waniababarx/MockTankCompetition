@@ -4,6 +4,12 @@
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
    <title>MockTank</title>
+   <!-- Your custom CSS -->
+   <link rel="stylesheet" href="style.css" />
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+   <!-- ✅ Font Awesome CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <link rel="stylesheet" href="style.css" />
     <style>
@@ -36,7 +42,7 @@
 
   <!-- TOP CONTACT BAR -->
    <div class="top-contact">
-    <p>📩 mocktankteam@gmail.com</p>
+    <a href="mailto:mocktankofficial@gmail.com">mocktankofficial@gmail.com</a>
    </div>
 
   <!-- MAIN NAVIGATION BAR -->
@@ -49,8 +55,14 @@
        <nav class="main-nav">
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#how">How It Works</a></li>
+          <li class="dropdown">
+            <a href="#about">About <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+            <li><a href="#mission">Our Mission</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#impact">Impact</a></li>
+            </ul>
+         </li>
           <li><a href="#timeline">Timeline</a></li>
           <li><a href="#apply">Apply</a></li>
           <li><a href="#faq">FAQ</a></li>
@@ -294,12 +306,42 @@
   </script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
+   <script>
    AOS.init({
     duration: 1000, // animation duration in ms
     once: true      // animate only once on scroll
    });
   </script>
-
+   <footer class="main-footer">
+   <div class="footer-container">
+    <div class="footer-col">
+      <h3>About</h3>
+      <p>MockTank is a global virtual pitch competition empowering high school students to create impactful startups.</p>
+    </div>
+    
+    <div class="footer-col">
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#apply">Apply</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-col">
+      <h3>Connect With Us</h3>
+      <a href="mailto:mocktankteam@gmail.com" class="footer-btn">Contact Us</a>
+      <div class="social-icons">
+        <a href="https://instagram.com/wearemocktank" target="_blank"><img src="insta-icon.png" alt="Instagram"></a>
+        <a href="https://tiktok.com/@wearemocktank" target="_blank"><img src="tiktok-icon.png" alt="TikTok"></a>
+        <!-- Add more icons if needed -->
+      </div>
+    </div>
+    </div>
+   <div class="footer-bottom">
+    <p>&copy; 2025 MockTank. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
