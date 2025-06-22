@@ -604,22 +604,26 @@ footer {
   transform: scale(1.2);
 }
 
+/* Dropdown container */
 .dropdown {
   position: relative;
 }
 
+/* Dropdown menu is hidden by default */
 .dropdown-menu {
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
   background-color: white;
-  min-width: 160px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  display: none;
+  min-width: 180px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   z-index: 1000;
+  border-radius: 4px;
   padding: 0.5rem 0;
 }
 
+/* Dropdown links */
 .dropdown-menu li {
   padding: 0.5rem 1rem;
 }
@@ -628,8 +632,14 @@ footer {
   color: #1E3A8A;
   text-decoration: none;
   display: block;
+  transition: background 0.3s ease;
 }
 
+.dropdown-menu li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show dropdown on hover */
 .dropdown:hover .dropdown-menu {
   display: block;
 }

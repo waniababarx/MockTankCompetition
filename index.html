@@ -343,5 +343,23 @@
     <p>&copy; 2025 MockTank. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+   document.querySelectorAll('.dropdown > a').forEach(drop => {
+    drop.addEventListener('click', function (e) {
+      e.preventDefault();
+      this.parentElement.classList.toggle('open');
+    });
+   });
+
+   window.addEventListener('click', function (e) {
+    document.querySelectorAll('.dropdown').forEach(drop => {
+      if (!drop.contains(e.target)) {
+        drop.classList.remove('open');
+      }
+    });
+   });
+  </script>
+  
 </body>
 </html>
