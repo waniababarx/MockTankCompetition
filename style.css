@@ -30,7 +30,7 @@ body {
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  background: url('header-bg.jpg') no-repeat center center/cover;
+  background-color: white;
   filter: blur(6px);
   z-index: 1;
 }
@@ -438,7 +438,7 @@ footer {
 }
 
 .empower-section {
-  background: url('idk.jpg') no-repeat center center/cover;
+  background-color: white;
   background-size: cover;
   background-position: center;
   padding: 6rem 2rem;
@@ -683,8 +683,8 @@ footer {
 }
 
 .countdown-heading {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 5 rem;
+  font-weight: 1000;
   color: #1e3a8a;
   margin-bottom: 2rem;
 }
@@ -716,4 +716,30 @@ footer {
   font-size: 1rem;
   color: #475569;
   font-weight: 500;
+}
+
+.steps-section h2 {
+  text-align: center;
+}
+
+.custom-shape-divider-bottom-1750663080 {
+    position: absolute;
+    bottom: 0;         /* ⬅️ Now it's at the bottom */
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);  /* ⬅️ Inverts the shape! */
+    z-index: 1;
+}
+
+.custom-shape-divider-bottom-1750663080 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 120px;
+}
+
+.custom-shape-divider-bottom-1750663080 .shape-fill {
+    fill: #FACC15;  /* Yellow — you can adjust to blue/white below */
 }
