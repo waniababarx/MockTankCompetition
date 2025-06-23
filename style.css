@@ -8,7 +8,7 @@
 
 body {
   line-height: 1.6;
-  background: #f8f9fa; /* clean, soft white-gray background */
+   background-color: #FACC15; /* clean, soft white-gray background */
 }
 
 /* Header – Styled like ExcelAcademe */
@@ -45,13 +45,13 @@ body {
 .hero-header h1 {
   font-size: 4.5rem;
   font-weight: 800;
-  color: white;
+  color: #1E3A8A;
 }
 
 .hero-subtitle {
-   font-size: 1.3rem;
+  font-size: 1.3rem;
   font-weight: 500;
-  color: #f8f9fa; /* lighter white tone */
+  color: #1E3A8A;
   text-shadow: none;
   margin-top: 1rem;
   margin-bottom: 2.5rem;
@@ -538,7 +538,7 @@ footer {
 }
 
 .main-footer {
-  background-color: #FEF3C7; /* Soft Yellow */
+  background-color: #FACC15; /* Soft Yellow */
   color: #1E3A8A; /* Deep Blue Text */
   padding: 40px 20px;
   font-family: 'Inter', sans-serif;
@@ -580,7 +580,7 @@ footer {
 }
 
 .footer-btn {
-  background-color: #FACC15;
+  background-color: #fff4c8;
   color: #1E3A8A;
   padding: 10px 16px;
   display: inline-block;
