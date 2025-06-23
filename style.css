@@ -700,19 +700,19 @@ footer {
 
 .count-box span {
   display: block;
-  font-size: 11rem; /* Already huge */
-  font-weight: normal; /* Let Anton handle boldness */
-  font-family: 'Anton', sans-serif;
-  letter-spacing: -3px;
-  text-transform: uppercase;
-  line-height: 1;
+  font-size: 5rem; /* match heading */
+  font-weight: 900; /* match heading */
+  font-family: 'Inter', 'Segoe UI', 'Poppins', sans-serif; /* match heading */
   color: #1E3A8A;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+  text-transform: uppercase;
+  letter-spacing: 0; /* match heading */
+  line-height: 1.1;
+  text-shadow: none; /* remove extra visual distraction */
 }
 
 .count-box small {
-  font-size: 5rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 500;
   color: #475569;
   margin-top: 0.5rem;
 }
