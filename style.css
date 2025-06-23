@@ -672,7 +672,7 @@ footer {
 }
 
 .countdown-heading {
-  font-size: 5rem;
+  font-size: 3.8rem;
   font-weight: 900;
   color: #1E3A8A;
   text-transform: uppercase;
@@ -689,8 +689,8 @@ footer {
 
 .count-box span {
   display: block;
-  font-size: 7rem; /* huge size */
-  font-weight: 1000;
+  font-size: 5rem; /* huge size */
+  font-weight: 900;
   font-family: 'Inter', 'Poppins', 'Segoe UI', sans-serif;
   color: #1E3A8A;
   text-transform: uppercase;
