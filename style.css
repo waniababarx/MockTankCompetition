@@ -8,7 +8,7 @@
 
 body {
   line-height: 1.6;
-  background-color: #FACC15;; /* clean, soft white-gray background */
+  background-color: #FEF9C3;; /* clean, soft white-gray background */
 }
 
 /* Header – Styled like ExcelAcademe */
@@ -16,7 +16,7 @@ body {
   position: relative;
   min-height: 100vh; /* Full screen height */
   padding-top: 4rem; /* Optional: Add top spacing */
-  background: #FACC15;
+  background: #FEF9C3;
   filter: blur(0);
   display: flex;
   align-items: center;
@@ -527,7 +527,7 @@ footer {
 }
 
 .main-footer {
-  background-color: #FACC15; /* Soft Yellow */
+  background-color: #FEF9C3; /* Soft Yellow */
   color: #1E3A8A; /* Deep Blue Text */
   padding: 40px 20px;
   font-family: 'Inter', sans-serif;
@@ -672,10 +672,12 @@ footer {
 }
 
 .countdown-heading {
-  font-size: 5 rem;
-  font-weight: 1000;
-  color: #1e3a8a;
-  margin-bottom: 2rem;
+  font-size: 5rem;         /* BIG and readable */
+  font-weight: 900;        /* Extra bold */
+  color: #1E3A8A;          /* Deep navy */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 2.5rem;
 }
 
 .countdown {
@@ -696,15 +698,16 @@ footer {
 
 .count-box span {
   display: block;
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 4rem;         /* Bigger than 2.5rem */
+  font-weight: 900;        /* Extra bold */
   color: #1e3a8a;
 }
 
 .count-box small {
-  font-size: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
   color: #475569;
-  font-weight: 500;
+  margin-top: 0.5rem;
 }
 
 .steps-section h2 {
@@ -731,4 +734,26 @@ footer {
 
 .custom-shape-divider-bottom-1750663080 .shape-fill {
     fill: #ffffff;  /* Yellow — you can adjust to blue/white below */
+}
+
+#timeline {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+#timeline .section-title {
+  text-align: center;
+  font-size: 2.75rem;
+  color: #0b2545;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.timeline-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #1E3A8A;
 }
