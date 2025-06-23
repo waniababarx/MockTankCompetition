@@ -665,54 +665,38 @@ footer {
   display: block;
 }
 
-.countdown-section {
-  background-color: #f8fafc;
-  padding: 60px 0;
-  text-align: center;
-}
-
-.countdown-heading {
-  font-size: 5rem;         /* BIG and readable */
-  font-weight: 900;        /* Extra bold */
-  color: #1E3A8A;          /* Deep navy */
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 2.5rem;
-}
-
 .countdown {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
+  display: flex;
   justify-content: center;
-  gap: 40px;
   flex-wrap: wrap;
+  gap: 60px;
 }
 
 .count-box {
   background: white;
-  padding: 10px 15px;
+  padding: 20px 40px; /* increased space */
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   text-align: center;
-  min-width: 140px;
+  min-width: 200px;
+  flex: 1 1 250px;
 }
 
 .count-box span {
   display: block;
-  font-size: 5rem; /* match heading */
-  font-weight: 900; /* match heading */
-  font-family: 'Inter', 'Segoe UI', 'Poppins', sans-serif; /* match heading */
+  font-size: 6.5rem; /* BOLDER */
+  font-weight: 1000; /* SUPER bold */
+  font-family: 'Inter', 'Segoe UI', 'Poppins', sans-serif;
   color: #1E3A8A;
   text-transform: uppercase;
-  letter-spacing: 0; /* match heading */
   line-height: 1.1;
-  text-shadow: none; /* remove extra visual distraction */
+  letter-spacing: -1px;
+  white-space: nowrap;
 }
 
 .count-box small {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 2.2rem;
+  font-weight: 600;
   color: #475569;
   margin-top: 0.5rem;
 }
