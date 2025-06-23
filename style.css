@@ -550,7 +550,7 @@ footer {
 .footer-col h3 {
   font-size: 1.25rem;
   margin-bottom: 1rem;
-  color: #1E3A8A;
+  color: #ffffff;
 }
 
 .footer-col ul {
@@ -560,7 +560,7 @@ footer {
 
 .footer-col ul li a {
   text-decoration: none;
-  color: #1E3A8A;
+  color: #ffffff;
   transition: color 0.3s ease;
 }
 
@@ -622,7 +622,7 @@ footer {
 }
 
 .social-icons i:hover {
-  color: #FACC15;
+  color: #ffffff;
   transform: scale(1.2);
 }
 
@@ -698,13 +698,18 @@ footer {
 
 .count-box span {
   display: block;
-  font-size: 4rem;         /* Bigger than 2.5rem */
-  font-weight: 900;        /* Extra bold */
+  font-size: 12rem;         /* Bigger than 2.5rem */
+  font-weight: 1000;        /* Extra bold */
   color: #1e3a8a;
+  font-family: 'Inter', 'Poppins', 'Segoe UI', sans-serif;
+  letter-spacing: -2px;    /* Tighter like your image */
+  text-transform: uppercase;
+  line-height: 1.1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .count-box small {
-  font-size: 1.3rem;
+  font-size: 5rem;
   font-weight: 600;
   color: #475569;
   margin-top: 0.5rem;
