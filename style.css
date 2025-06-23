@@ -16,7 +16,7 @@ body {
   position: relative;
   min-height: 100vh; /* Full screen height */
   padding-top: 4rem; /* Optional: Add top spacing */
-  background: #FACC15;
+  background-image: url('backonground.jpg'); /* 👈 put your image here */
   filter: blur(0);
   display: flex;
   align-items: center;
@@ -427,7 +427,7 @@ footer {
 }
 
 .empower-section {
-  background-color: white;
+  background-image: url('yourdamnimage.jpg'); 
   background-size: cover;
   background-position: center;
   padding: 6rem 2rem;
