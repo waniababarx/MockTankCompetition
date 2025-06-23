@@ -184,9 +184,6 @@ footer {
 }
 
 /* Section Backgrounds */
-#home {
-  background: linear-gradient(to right, #facc15, #fcd34d);
-}
 
 #about {
   background-color: #ffffff;
@@ -764,4 +761,8 @@ footer {
 
 .navbar-logo {
   height: 34px;
+}
+
+.custom-shape-divider-bottom-1750663080 .shape-fill {
+  fill: #ffffff;
 }
