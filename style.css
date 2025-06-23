@@ -8,7 +8,7 @@
 
 body {
   line-height: 1.6;
-  background-color: #FEF9C3;; /* clean, soft white-gray background */
+  background-color: #ffffff;; /* clean, soft white-gray background */
 }
 
 /* Header – Styled like ExcelAcademe */
@@ -16,7 +16,7 @@ body {
   position: relative;
   min-height: 100vh; /* Full screen height */
   padding-top: 4rem; /* Optional: Add top spacing */
-  background: #FEF9C3;
+  background: #FACC15;
   filter: blur(0);
   display: flex;
   align-items: center;
@@ -27,7 +27,7 @@ body {
 .hero-header .overlay {
   position: relative;
   z-index: 2;
-  color: white;
+  color: #1E3A8A;
   text-align: center;
 }
 
@@ -209,7 +209,7 @@ footer {
 }
 .about-copy {
   padding: 5rem 0;
-  background: white;
+  background: #1E3A8A;
 }
 
 .about-wrapper {
@@ -240,7 +240,7 @@ footer {
 
 .about-right h2 {
   font-size: 3rem;
-  color: #06203f;
+  color: #1E3A8A;
   margin-bottom: 1.5rem;
   font-weight: 600;
   font-family: 'Segoe UI', 'Poppins';
@@ -249,7 +249,7 @@ footer {
 .about-right p {
   font-size: 1.15rem;
   line-height: 1.8;
-  color: #000000bb;
+  color:  #0f172a;
   margin-bottom: 1.2rem;
 }
 /* Top contact bar */
@@ -527,8 +527,8 @@ footer {
 }
 
 .main-footer {
-  background-color: #FEF9C3; /* Soft Yellow */
-  color: #1E3A8A; /* Deep Blue Text */
+  background-color: #1E3A8A; /* Soft Yellow */
+  color: #ffffff; /* Deep Blue Text */
   padding: 40px 20px;
   font-family: 'Inter', sans-serif;
 }
@@ -569,7 +569,7 @@ footer {
 }
 
 .footer-btn {
-  background-color: #fff4c8;
+  background-color: #FACC15;
   color: #1E3A8A;
   padding: 10px 16px;
   display: inline-block;
@@ -588,7 +588,7 @@ footer {
   text-align: center;
   padding-top: 1.5rem;
   font-size: 0.9rem;
-  color: #1E3A8A;
+  color: #ffffff;
 }
 
 .social-icons img {
@@ -756,4 +756,8 @@ footer {
   font-size: 1.1rem;
   line-height: 1.8;
   color: #1E3A8A;
+}
+
+.navbar-logo {
+  height: 34px;
 }
