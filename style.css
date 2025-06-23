@@ -8,7 +8,7 @@
 
 body {
   line-height: 1.6;
-   background-color: #FACC15; /* clean, soft white-gray background */
+  background-color: #FACC15;; /* clean, soft white-gray background */
 }
 
 /* Header – Styled like ExcelAcademe */
@@ -16,7 +16,7 @@ body {
   position: relative;
   min-height: 100vh; /* Full screen height */
   padding-top: 4rem; /* Optional: Add top spacing */
-  background: linear-gradient(135deg, #FACC15 0%, #ffffff 50%, #1E3A8A 100%);
+  background: #FACC15;
   filter: blur(0);
   display: flex;
   align-items: center;
@@ -741,5 +741,5 @@ footer {
 }
 
 .custom-shape-divider-bottom-1750663080 .shape-fill {
-    fill: #FACC15;  /* Yellow — you can adjust to blue/white below */
+    fill: #ffffff;  /* Yellow — you can adjust to blue/white below */
 }
