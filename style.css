@@ -272,7 +272,7 @@ footer {
 
 /* Main white navbar */
 .main-header {
-  background: linear-gradient(to right, rgba(198, 200, 255, 0.3), rgba(170, 176, 231, 0.267));
+  background: linear-gradient(to right, rgba(198, 200, 255, 0.3), rgba(170, 176, 231, 0));
   backdrop-filter: blur(10px); /* glassy effect */
   padding: 1.7rem 0; 
   position: sticky;   
@@ -300,7 +300,7 @@ footer {
 .site-name h1 {
   font-size: 1.75rem;
   font-weight: bold;
-  color: #c2d2ff;
+  color: #1E3A8A;
   margin: 0;
 }
 
