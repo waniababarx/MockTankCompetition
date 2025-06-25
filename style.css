@@ -227,25 +227,26 @@ footer {
 /* Section Backgrounds */
 
 #about {
-  background: linear-gradient(135deg, #E0F2FE, #FEF9C3); /* soft blue to yellow */
+  background: linear-gradient(135deg, #E0F2FE, #FEF9C3); /* soft blue-yellow */
 }
 
 #how {
-  background: linear-gradient(to right, #FACC15, #FDE68A); /* bright yellow blend */
+  background: linear-gradient(to right, #FACC15, #FDE68A); /* warm yellow */
 }
 
 #timeline {
-  background: linear-gradient(135deg, #1E3A8A, #3B82F6); /* deep navy to bright blue */
-  color: white; /* since it's dark */
-}
-
-#apply {
-  background: linear-gradient(135deg, #FDE68A, #ffffff); /* soft yellow to white */
+  background: linear-gradient(to right, #1E3A8A, #3B82F6); /* deep blue flow */
+  color: white;
 }
 
 #faq {
-  background: linear-gradient(to right, #FDF6B2, #FACC15); /* soft pastel to vivid yellow */
+  background: linear-gradient(145deg, #FDF6B2, #FACC15); /* smooth yellow */
 }
+
+#apply {
+  background: linear-gradient(to bottom right, #FFFDE7, #FDE68A); /* light pastel */
+}
+
 .about-copy {
   padding: 5rem 0;
   background: #1E3A8A;
@@ -470,7 +471,7 @@ footer {
 }
 
 .empower-section {
-  background-image: url('yourdamnimage.jpg'); 
+  background: linear-gradient(135deg, #1E3A8A, #3B82F6); /* deep gradient */
   background-size: cover;
   background-position: center;
   padding: 6rem 2rem;
