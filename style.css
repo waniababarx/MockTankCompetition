@@ -22,45 +22,71 @@ body {
 }
 
 /* Header – Styled like ExcelAcademe */
+
 .hero-header {
   height: 100vh;
-  position: relative;
-  min-height: 100vh; /* Full screen height */
-  padding-top: 4rem; /* Optional: Add top spacing */
-  filter: blur(0);
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  background-size: 200% 200%;
+  position: relative;
+  padding: 4rem 1rem;
+  background: linear-gradient(
+    135deg,
+    #1E3A8A 0%,
+    #3B82F6 25%,
+    #FDE68A 50%,
+    #ffffff 75%,
+    #FACC15 100%
+  );
+  background-size: 300% 300%;
   animation: gradientFlow 20s ease infinite;
+  overflow: hidden;
+  text-align: center;
 }
 
 .hero-header .overlay {
-  position: relative;
   z-index: 2;
+  max-width: 800px;
+  padding: 2rem;
   color: #1E3A8A;
   text-align: center;
 }
 
 .hero-header h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 800;
   color: #1E3A8A;
+  margin-bottom: 1rem;
 }
 
 .hero-subtitle {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: #1E3A8A;
-  text-shadow: none;
   margin-top: 1rem;
-  margin-bottom: 2.5rem;
-  }
+  margin-bottom: 2rem;
+}
 
-.hero-header p {
-  font-size: 1.5rem;
-  margin-top: 1rem;
+.hero-header .btn {
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  background-color: #FACC15;
+  color: #1E3A8A;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+.hero-header .btn:hover {
+  background-color: #fcd34d;
+  color: #0f172a;
+}
+
+.custom-shape-divider-bottom-1750663080 {
+  z-index: 1;
 }
 
 .site-name {
