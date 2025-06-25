@@ -8,11 +8,22 @@
 
 body {
   line-height: 1.6;
-  background-color: #ffffff;; /* clean, soft white-gray background */
+  background: linear-gradient(
+    135deg,
+    #1E3A8A 0%,
+    #3B82F6 25%,
+    #FDE68A 50%,
+    #ffffff 75%,
+    #FACC15 100%
+  );
+  background-size: 300% 300%;
+  animation: gradientFlow 15s ease infinite;
+  color: #1E3A8A;
 }
 
 /* Header – Styled like ExcelAcademe */
 .hero-header {
+  height: 100vh;
   position: relative;
   min-height: 100vh; /* Full screen height */
   padding-top: 4rem; /* Optional: Add top spacing */
@@ -22,6 +33,8 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-size: 200% 200%;
+  animation: gradientFlow 20s ease infinite;
 }
 
 .hero-header .overlay {
@@ -125,7 +138,7 @@ nav a:hover {
 
 /* Button */
 .btn {
-  background: #1E3A8A;
+  background: linear-gradient(to right, #1e3a8a, #facc15);
   color: white;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -135,6 +148,7 @@ nav a:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* clean shadow */
   transition: background 0.3s ease, transform 0.3s ease;
 }
+
 .header-btn {
   font-size: 1.1rem;
   padding: 0.9rem 2rem;
@@ -148,9 +162,11 @@ nav a:hover {
   background: #fcd34d;
   color: #0f172a;
 }
+
 .btn:hover {
   background: #16367d;
-  transform: translateY(-2px);
+  background-position: right center;
+  transform: scale(1.05);
 }
 
 /* Sections */
@@ -249,6 +265,7 @@ footer {
   color:  #0f172a;
   margin-bottom: 1.2rem;
 }
+
 /* Top contact bar */
 .top-contact {
   background-color: #ffffff;
@@ -262,7 +279,9 @@ footer {
 
 /* Main white navbar */
 .main-header {
-  background:  white;
+  background: rgba(255, 255, 255, 0.85); /* semi-transparent */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
   padding: 1.2rem 0;
   position: sticky;   
   top: 0;
@@ -311,6 +330,7 @@ footer {
 .main-nav a:hover {
   color: #FACC15;
 }
+
 .tab-section {
   padding: 4rem 2rem;
   background: #f9fafb;
@@ -766,3 +786,33 @@ footer {
 .custom-shape-divider-bottom-1750663080 .shape-fill {
   fill: #ffffff;
 }
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.custom-shape-divider-bottom-1750839742 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1750839742 svg {
+    position: relative;
+    display: block;
+    width: calc(129% + 1.3px);
+    height: 186px;
+}
+
+
