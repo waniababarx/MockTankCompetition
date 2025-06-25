@@ -139,7 +139,7 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: 3.5rem
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -199,6 +199,11 @@ section {
   padding: 4rem 2rem;
   width: 100%;
   max-width: none;
+
+  background: linear-gradient(180deg, #0f172a 0%, #1e3a8a 50%, #3b82f6 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white; /* makes text readable */
 }
 
 section h2 {
@@ -227,24 +232,23 @@ footer {
 /* Section Backgrounds */
 
 #about {
-  background: linear-gradient(135deg, #E0F2FE, #FEF9C3); /* soft blue-yellow */
+  background: linear-gradient(180deg, #1e3a8a 0%, #3b82f6 100%);
 }
 
 #how {
-  background: linear-gradient(to right, #FACC15, #FDE68A); /* warm yellow */
+  background: linear-gradient(180deg, #3b82f6 0%, #60a5fa 100%);
 }
 
 #timeline {
-  background: linear-gradient(to right, #1E3A8A, #3B82F6); /* deep blue flow */
-  color: white;
+  background: linear-gradient(180deg, #60a5fa 0%, #1e3a8a 100%);
 }
 
 #faq {
-  background: linear-gradient(145deg, #FDF6B2, #FACC15); /* smooth yellow */
+  background: linear-gradient(180deg, #1e3a8a 0%, #3b82f6 100%);
 }
 
 #apply {
-  background: linear-gradient(to bottom right, #FFFDE7, #FDE68A); /* light pastel */
+  background: linear-gradient(180deg, #3b82f6 0%, #1e40af 100%);
 }
 
 .about-copy {
@@ -445,6 +449,7 @@ footer {
   transition: all 0.3s ease;
   text-decoration: none;
   z-index: 1000;
+  
 }
 
 .floating-apply-btn:hover {
@@ -811,7 +816,7 @@ footer {
 }
 
 .custom-shape-divider-bottom-1750663080 .shape-fill {
-  fill: #ffffff;
+  fill: #1e3a8a;
 }
 
 @keyframes gradientFlow {
@@ -842,4 +847,18 @@ footer {
     height: 186px;
 }
 
+.shape-divider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-top: -1px;
+}
+
+.shape-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 120px;
+}
 
