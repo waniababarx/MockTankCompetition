@@ -672,7 +672,7 @@ footer {
 }
 
 .countdown-heading {
-  font-size: 3.8rem;
+  font-size: 2.5rem;
   font-weight: 900;
   color: #1E3A8A;
   text-transform: uppercase;
@@ -689,7 +689,7 @@ footer {
 
 .count-box span {
   display: block;
-  font-size: 5rem; /* huge size */
+  font-size: 3.8rem; /* huge size */
   font-weight: 900;
   font-family: 'Inter', 'Poppins', 'Segoe UI', sans-serif;
   color: #1E3A8A;
@@ -768,4 +768,44 @@ footer {
 
 .custom-shape-divider-bottom-1750663080 .shape-fill {
   fill: #ffffff;
+}
+
+.mission-section {
+  padding: 5rem 1rem;
+  position: relative;
+}
+
+.mission-split-bg {
+  background: linear-gradient(to right, #1E3A8A 50%, #F0F4FF 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-overlay-card {
+  background: white;
+  padding: 2.5rem 2rem;
+  max-width: 650px;
+  width: 90%;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.mission-overlay-card h2 {
+  font-size: 2rem;
+  color: #1E3A8A;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.mission-overlay-card p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
 }
