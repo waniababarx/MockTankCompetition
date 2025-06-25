@@ -227,23 +227,24 @@ footer {
 /* Section Backgrounds */
 
 #about {
-  background-color: #ffffff;
+  background: linear-gradient(135deg, #E0F2FE, #FEF9C3); /* soft blue to yellow */
 }
 
 #how {
-  background-color: #ffffff;
+  background: linear-gradient(to right, #FACC15, #FDE68A); /* bright yellow blend */
 }
 
 #timeline {
-  background-color: #ffffff;
+  background: linear-gradient(135deg, #1E3A8A, #3B82F6); /* deep navy to bright blue */
+  color: white; /* since it's dark */
 }
 
 #apply {
-  background-color: #ffffff;
+  background: linear-gradient(135deg, #FDE68A, #ffffff); /* soft yellow to white */
 }
 
 #faq {
-  background-color: #ffffff;
+  background: linear-gradient(to right, #FDF6B2, #FACC15); /* soft pastel to vivid yellow */
 }
 .about-copy {
   padding: 5rem 0;
