@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -8,75 +7,47 @@
 
 body {
   line-height: 1.6;
-  background: white
+  background-color: #ffffff;; /* clean, soft white-gray background */
 }
 
 /* Header – Styled like ExcelAcademe */
-
 .hero-header {
-  height: 100vh;
-  width: 100%;
+  position: relative;
+  min-height: 100vh; /* Full screen height */
+  padding-top: 4rem; /* Optional: Add top spacing */
+  background: url('waniaok.jpg'); /* 👈 put your image here */
+  filter: blur(0);
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  padding: 4rem 1rem;
-  background: linear-gradient(
-    135deg,
-    #1E3A8A 0%,
-    #3B82F6 25%,
-    #FDE68A 50%,
-    #ffffff 75%,
-    #FACC15 100%
-  );
-  background-size: 300% 300%;
-  animation: gradientFlow 20s ease infinite;
   overflow: hidden;
-  text-align: center;
 }
 
 .hero-header .overlay {
+  position: relative;
   z-index: 2;
-  max-width: 800px;
-  padding: 2rem;
   color: #1E3A8A;
   text-align: center;
 }
 
 .hero-header h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-weight: 800;
   color: #1E3A8A;
-  margin-bottom: 1rem;
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
   color: #1E3A8A;
+  text-shadow: none;
   margin-top: 1rem;
-  margin-bottom: 2rem;
-}
+  margin-bottom: 2.5rem;
+  }
 
-.hero-header .btn {
-  font-size: 1.1rem;
-  padding: 1rem 2rem;
-  background-color: #FACC15;
-  color: #1E3A8A;
-  font-weight: bold;
-  border-radius: 50px;
-  text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: background 0.3s ease;
-}
-
-.hero-header .btn:hover {
-  background-color: #fcd34d;
-  color: #0f172a;
-}
-
-.custom-shape-divider-bottom-1750663080 {
-  z-index: 1;
+.hero-header p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
 .site-name {
@@ -129,7 +100,7 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: 3.5rem
+  font-size: 3.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -153,7 +124,7 @@ nav a:hover {
 
 /* Button */
 .btn {
-  background: linear-gradient(to right, #1e3a8a, #facc15);
+  background: #1E3A8A;
   color: white;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -180,8 +151,7 @@ nav a:hover {
 
 .btn:hover {
   background: #16367d;
-  background-position: right center;
-  transform: scale(1.05);
+  transform: translateY(-2px);
 }
 
 /* Sections */
@@ -189,11 +159,6 @@ section {
   padding: 4rem 2rem;
   width: 100%;
   max-width: none;
-
-  background: linear-gradient(180deg, #0f172a 0%, #1e3a8a 50%, #3b82f6 100%);
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white; /* makes text readable */
 }
 
 section h2 {
@@ -222,24 +187,24 @@ footer {
 /* Section Backgrounds */
 
 #about {
-  background: white
+  background-color: #ffffff;
 }
 
 #how {
-  background: white
+  background-color: #ffffff;
 }
 
 #timeline {
-  background: white
-}
-
-#faq {
-  background: white
+  background-color: #ffffff;
 }
 
 #apply {
-  background: white
+  background-color: #ffffff;
+}
 
+#faq {
+  background-color: #ffffff;
+}
 .about-copy {
   padding: 5rem 0;
   background: #1E3A8A;
@@ -299,9 +264,7 @@ footer {
 
 /* Main white navbar */
 .main-header {
-  background: rgba(255, 255, 255, 0.85); /* semi-transparent */
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  background:  white;
   padding: 1.2rem 0;
   position: sticky;   
   top: 0;
@@ -438,7 +401,6 @@ footer {
   transition: all 0.3s ease;
   text-decoration: none;
   z-index: 1000;
-  
 }
 
 .floating-apply-btn:hover {
@@ -465,7 +427,7 @@ footer {
 }
 
 .empower-section {
-  background: linear-gradient(135deg, #1E3A8A, #3B82F6); /* deep gradient */
+  background-image: url('yourdamnimage.jpg'); 
   background-size: cover;
   background-position: center;
   padding: 6rem 2rem;
@@ -805,49 +767,5 @@ footer {
 }
 
 .custom-shape-divider-bottom-1750663080 .shape-fill {
-  fill: #1e3a8a;
+  fill: #ffffff;
 }
-
-@keyframes gradientFlow {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.custom-shape-divider-bottom-1750839742 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-bottom-1750839742 svg {
-    position: relative;
-    display: block;
-    width: calc(129% + 1.3px);
-    height: 186px;
-}
-
-.shape-divider {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  margin-top: -1px;
-}
-
-.shape-divider svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 120px;
-}
-

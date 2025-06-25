@@ -74,23 +74,24 @@
     </div>
   </header>
 
-  <section class="hero-header" id="home" data-aos="fade-up" data-aos-delay="200">
-    <div class="overlay">
+
+  <section class="hero-header" id="home">
+   <div class="overlay">
     <h1>Join the MockTank Competition</h1>
     <p class="hero-subtitle">A virtual pitch competition for high school students around the world</p>
     <a href="#apply" class="btn header-btn">Apply Now</a>
-    </div>
+   </div>
 
     <div class="custom-shape-divider-bottom-1750663080">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
          viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,
                  82.39-16.72,168.19-17.73,250.45-.39C823.78,31,
                  906.67,72,985.66,92.83c70.05,18.48,
                  146.53,26.09,214.34,3V0H0V27.35A600.21,
                  600.21,0,0,0,321.39,56.44Z"
-            class="shape-fill"></path>
-    </svg>
+              class="shape-fill"></path>
+      </svg>
     </div>
   </section>
 
@@ -112,11 +113,9 @@
     <div class="count-box">
       <span id="seconds">00</span>
       <small>Seconds</small>
-
-
     </div>
     </div>
-  </section>
+   </section>
 
   <section class="empower-section">
    <div class="empower-overlay">
@@ -126,12 +125,13 @@
     </h2>
     <a href="#about" class="btn empower-btn">Learn More</a>
     </div>
-
   </section>
 
 
-  <section id="about" class="about-copy" data-aos="fade-up">
+  <section id="about" class="about-copy" data-aos="fade-up"></section>
+    <div class="about-wrapper">
      <div class="about-left" data-aos="fade-right">
+      <img src="about.jpg" alt="MockTank Visual" />
      </div>
     <div class="about-right" data-aos="fade-left">
       <h2>About Us</h2>
@@ -143,7 +143,6 @@
       </p>
     </div>
    </div>
-
   </section>
 
   <section id="how" class="steps-section">
@@ -181,7 +180,6 @@
       </div>
     </div>
     </div>
-
   </section>
 
   <section id="timeline">
@@ -218,7 +216,6 @@
    <ul>
     <li><strong>July 20, 2025:</strong> Grand Finale — Finalists pitch one last time; winners are announced during the virtual ceremony.</li>
    </ul>
-
   </section>
 
   <section id="competition-tabs" class="tab-section">
@@ -309,6 +306,27 @@
 
   <!-- Add this before </body> -->
  <a href="#home" class="scroll-top-btn" title="Go to top">⬆</a>
+
+  <style>
+   .scroll-top-btn {
+   position: fixed;
+   bottom: 80px;
+   right: 20px;
+   background-color: #1E3A8A;
+   color: white;
+   padding: 10px 12px;
+   border-radius: 50%;
+   font-size: 1.2rem;
+   display: none;
+   z-index: 1000;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+   transition: background 0.3s ease;
+   }
+
+   .scroll-top-btn:hover {
+   background-color: #16367d;
+   }
+  </style>
 
   <script>
    const scrollBtn = document.querySelector('.scroll-top-btn');
